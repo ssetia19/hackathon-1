@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+  <nav class="nav-extended teal">
+    <div class="nav-wrapper top">
+      <a href="#" class="brand-logo">XYZ Organisation</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">logout</a></li>
+      </ul>
+    </div>
+    <div class="nav-content top">
+    </div>
+  </nav>
+  <div class="container ">
+  	<h3>Hello Organiser</h3>
+  	<br>
+  	<div class="card npresenter">
+  	<br>
+  	<!-- <h4>Your request has been sent to be a organiser.</h4>
+    <h4>Waiting for admin's response.</h4> -->
+  	<br>
+    </div>
+     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">add a new session</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <!-- <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div> -->
+    <div id="addE" class="col s6">
+      <form class="col s6" id="addSession">
+        <div class="form-container">
+        <h3 class="teal-text">Add Session</h3>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">event</i>
+            <input id="ename" type="text" name="sessionName">
+            <label for="text">Session Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <input id="description" type="text" name="description">
+            <label for="text">Description</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">place</i>
+            <input id="location" type="text" name="location">
+            <label for="text">Location</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">perm_contact_calendar</i>
+          <input type="text" class="datepicker" name="date">
+          <label for="text">date</label>
+        </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">alarm</i>
+            <input type="text" class="timepicker" name="time">
+           <label for="text">time</label>
+        </div>
+        </div>
+        <div class="row">
+          <div class=""></div>
+        </div>
+        <br>
+        <center>
+          <button class="btn waves-effect waves-light teal" type="submit" name="addevent">Add</button>
+        </center>
+      </div>
+      </form>
+    </div>
+  </div>
+  
+
+     <div class="row" id="sessions">
+        
+      </div>
+
+  </div>
+  <div id="test">
+    
+  </div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/organiser.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
